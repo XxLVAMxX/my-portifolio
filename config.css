@@ -1,0 +1,128 @@
+* {
+  color: #ffffff;
+  text-shadow: 1px 1px #000000;
+  font-family: sans-serif;
+  text-align: justify;
+  text-decoration: none;
+}
+
+body,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  border: #ffffff 3px;
+  border-style: none none ridge none;
+  background-color: #ffa600;
+  color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.cabe {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+}
+
+.menu li {
+  margin: 0 15px;
+}
+
+.menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.wallback {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  background-image: url(stars-7088.gif);
+}
+
+.wbody {
+  float: center;
+  background-color: rgb(128, 128, 128);
+  background-attachment: fixed;
+  margin: -1% 10% -1% 10%;
+  padding: 2% 2% 2% 2%;
+  border: 3px #ffbb00;
+  border-style: ridge;
+}
+
+.mi {
+  opacity: 0%;
+  transition: opacity .5s ease-in-out;
+}
+
+.botton {
+  background-color: #ffbb00;
+  border-radius: 3px;
+  padding: 1%;
+  display: inline-block;
+}
+
+.botton:hover {
+  background-color: #ad8a29;
+}
+
+.inv:checked~.botton~.mi {
+  opacity: 1;
+}
+
+h3 {
+  color: #ffffff;
+  text-shadow: 1px 1px #000000;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.logo {
+  background-color: #000000;
+  padding: 5%;
+  border-radius: 2em;
+  margin: 5% 0% 4% 5%;
+  animation: ease 5s;
+  animation-name: beg;
+}
+
+@keyframes beg {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.redes {
+  display: ruby-base-container;
+}
+
+.icon:hover {
+  transition: 100ms;
+  opacity: .7;
+}
+
+.organiza{
+  display: flex;
+}
+
+.projetos
+{
+  display: grid;
+}
